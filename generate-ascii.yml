@@ -8,8 +8,9 @@ jobs:
         steps:
             - name: Checkout repository 
               uses: actions/checkout@v4
-            - name: Executing shell script
-              run: ./ascii-gen.sh
             - name: list repo files
               run: ls -ltra 
+            - name: Executing shell script
+              run: ./ascii-gen.sh
+
             
