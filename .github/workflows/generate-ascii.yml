@@ -12,7 +12,7 @@ jobs:
               run: ls -ltra 
             - name: Executing shell script
               run: |
-                chmod +x
+                chmod +x ascii-gen.sh
                 ./ascii-gen.sh
 
             
