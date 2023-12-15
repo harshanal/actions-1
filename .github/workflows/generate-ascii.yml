@@ -8,16 +8,8 @@ jobs:
         steps:
             - name: Checkout repository 
               uses: actions/checkout@v4
-            - name: welcome message
-              run: echo "GitHub initial"
-            - name : install cowsay
-              run: sudo apt-get install cowsay -y
-            - name: execute cowsay cmd
-              run: cowsay -f dragon "I am a dragon!" >> dragon.txt
-            - name: check if file created
-              run: grep -i "dragon" dragon.txt
-            - name: read file
-              run: cat dragon.txt
+            - name: Executing shell script
+              run: ascii-gen.sh
             - name: list repo files
               run: ls -ltra 
             
